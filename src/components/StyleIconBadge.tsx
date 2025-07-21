@@ -1,6 +1,6 @@
-import { Component, ReactNode, createElement, CSSProperties } from 'react';
+import { Component, ReactNode, createElement, CSSProperties } from "react";
 
-import { Badge } from './Badge';
+import { Badge } from "./Badge";
 
 export interface InputProps {
     class: string;
@@ -11,15 +11,15 @@ export interface InputProps {
 
 export class StyleIconBadge extends Component<InputProps> {
     render(): ReactNode {
-        const customClasses = 'sr-icon-badge ' + this.props.class;
+        const customClasses = "sr-icon-badge " + this.props.class;
 
         let len = this.props.badgeContent.length;
         len = len === 1 ? 2 : len;
         const rt = (len - 1) * 0.75 * 0.6 + 2;
         const mt = 1.1 * 0.6;
         const customStyle: CSSProperties = {
-            marginTop: mt + 'em',
-            width: 'calc(' + rt + 'em + 2px)',
+            marginTop: mt + "em",
+            width: "calc(" + rt + "em + 2px)"
         };
 
         return (

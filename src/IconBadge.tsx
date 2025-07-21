@@ -1,5 +1,4 @@
 import { Component, ReactNode, createElement } from "react";
-import { hot } from "react-hot-loader/root";
 
 import { CharacterIconBadge } from "./components/CharacterIconBadge";
 import { StyleIconBadge } from "./components/StyleIconBadge";
@@ -14,11 +13,23 @@ export class IconBadge extends Component<IconBadgeContainerProps> {
         const iconStyle = this.props.iconStyle || "";
         const chars = this.props.characters || "";
         if (this.props.iconType === "icon") {
-            return <StyleIconBadge class={this.props.class} style={this.props.style} badgeContent={badgeContent} iconStyle={iconStyle} />;
+            return (
+                <StyleIconBadge
+                    class={this.props.class}
+                    style={this.props.style}
+                    badgeContent={badgeContent}
+                    iconStyle={iconStyle}
+                />
+            );
         } else {
-            return <CharacterIconBadge class={this.props.class} style={this.props.style} badgeContent={badgeContent} characters={chars} />;
+            return (
+                <CharacterIconBadge
+                    class={this.props.class}
+                    style={this.props.style}
+                    badgeContent={badgeContent}
+                    characters={chars}
+                />
+            );
         }
     }
 }
-
-export default hot(IconBadge);

@@ -1,23 +1,23 @@
 .sr-icon-badge .sr-icon-badge-content {
-    background-color: #fff;
-    border-radius: 1em;
-    border: 1px solid #020202;
-    font-weight: 600;
-    height: 2em;
-    padding-top: 0.25em;
-    position: relative;
-    text-align: center;
-    width: 2em;
+  background-color: #fff;
+  border-radius: 1em;
+  border: 1px solid #020202;
+  font-weight: 600;
+  height: 2em;
+  padding-top: 0.25em;
+  position: relative;
+  text-align: center;
+  width: 2em;
 }
 
 .sr-icon-badge .sr-icon-badge-badge {
-    background-color: #fff;
-    border-radius: 1em;
-    border: 1px solid #020202;
-    font-size: 0.6em;
-    font-weight: normal;
-    height: 2em;
-    padding-top: 0.25em;
-    position: absolute;
-    top: -1.1em;
+  background-color: #fff;
+  border-radius: 1em;
+  border: 1px solid #020202;
+  font-size: 0.6em;
+  font-weight: normal;
+  height: 2em;
+  padding-top: 0.25em;
+  position: absolute;
+  top: -1.1em;
 }
