@@ -1,0 +1,38 @@
+{
+  "name": "iconbadge",
+  "widgetName": "IconBadge",
+  "version": "1.0.0",
+  "description": "An icon with a badge containing a numerical value",
+  "copyright": "2020 QVine Corporation",
+  "author": "Stephen",
+  "config": {
+    "widgetPath": "../..//widgets",
+    "projectPath": "../IconBadgeWidgetTestApp/",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "com.qvine.soar.widgets",
+  "scripts": {
+    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:ts",
+    "build": "pluggable-widgets-tools build:ts",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:ts"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.9.2",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/jest": "^24.0.0",
+    "@types/react": "~16.9.0",
+    "@types/react-dom": "~16.9.0",
+    "@types/react-test-renderer": "~16.9.0"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
+    "classnames": "^2.2.6"
+  }
+}
