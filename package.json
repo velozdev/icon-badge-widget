@@ -17,7 +17,6 @@
     "mendixHost": "http://localhost:8080",
     "developmentPort": "3000"
   },
-  "packagePath": "com.qvine.soar.widgets",
   "scripts": {
     "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
     "dev": "pluggable-widgets-tools start:web",
