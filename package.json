@@ -3,8 +3,6 @@
   "widgetName": "IconBadge",
   "version": "1.0.0",
   "description": "An icon with a badge containing a numerical value",
-  "copyright": "2020 QVine Corporation",
-  "author": "Stephen",
   "main": "dist/IconBadge.js",
   "typings": "dist/IconBadge.d.ts",
   "files": [
