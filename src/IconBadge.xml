@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="com.qvine.soar.widgets.iconbadge.IconBadge" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Icon Badge</name>
+    <description>An icon with a badge containing a numerical value</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="iconType" type="enumeration" required="true" defaultValue="icon">
+                <caption>Icon Type</caption>
+                <description>The icon type to use</description>
+                <enumerationValues>
+                    <enumerationValue key="icon">Icon</enumerationValue>
+                    <enumerationValue key="characters">Characters</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="iconStyle" type="string" required="false">
+                <caption>Icon Style</caption>
+                <description>The style class to add to render the icon</description>
+            </property>
+            <property key="characters" type="string" required="false">
+                <caption>Characters</caption>
+                <description>Up to two characters to use for the icon</description>
+            </property>
+            <property key="badgeContent" type="attribute">
+                <caption>Badge Content</caption>
+                <description>Content to put in the badge</description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                    <attributeType name="Long"/>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
