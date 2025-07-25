@@ -4,6 +4,6 @@ module.exports = {
   ...base,
   env: {
     ...base.env,
-    "jest": true
-  }
+    jest: true,
+  },
 };
